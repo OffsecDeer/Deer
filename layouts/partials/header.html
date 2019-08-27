@@ -39,7 +39,9 @@
         <div id="article">
 	  <h1>{{ .Title }}</h1>
 		{{ if (.Params.toc) }}
+		{{% summary %}}
 <aside>
     {{.TableOfContents}}
 </aside>
+		{{% /summary %}}
 {{ end }}
