@@ -40,8 +40,8 @@
 	  <h1>{{ .Title }}</h1>
 		{{ if (.Params.toc) }}
 <aside>
-	{{% summary %}}
+	{a{% summary %}}
     {{.TableOfContents}}
-	{{% /summary %}}
+	{a{% /summary %}}
 </aside>
 {{ end }}
