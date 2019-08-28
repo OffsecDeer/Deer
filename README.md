@@ -1,67 +1,82 @@
-# Crab
+# Deer
 
-Crab is a clean website theme for the [Hugo](https://gohugo.io) static
+Deer is a customized version of the [Crab](https://github.com/thomasheller/crab) theme for the [Hugo](https://gohugo.io) static
 site generator.
 
-![Crab theme screenshot](https://raw.githubusercontent.com/thomasheller/crab/master/images/screenshot.png)
+It was modified to satisfy my needs for my own blog and is not part of the official list of Hugo's themes (not yet, maybe when I've completed it). If you want a preview you can take a look at my [blog](https://offsecdeer.gitlab.io) or use the example website provided in the repo, which is a direct copy from the example website included in the original Crab theme.
 
 ## Features
-
+All the original features from Crab are supported:
 - responsive
 - nested menus
 - two-column
 - tag support
 - blog articles
-
-## Preview
-
-If you'd like to get a live demo of the Crab theme locally, you could
-clone the repository, cd to the `exampleSite` directory and run
-`HUGO_THEMESDIR=../.. hugo serve -t crab` from there (assuming
-[Hugo](http://gohugo.io) is already installed).
+New features (more to be added in the future):
+- better looking table of contents
+- more compact
+- code highlighting with [Prism.js](https://prismjs.com/)
+- do the dark relaxing colors count?
 
 ## Installation
 
-Read the [Hugo Quickstart
-Guide](https://gohugo.io/overview/quickstart/) for an introduction to
-Hugo itself. Once you created a new Hugo site, you can use the Crab
-theme.
-
-In your Hugo site's folder:
+Install Hugo:
 
 ```sh
-$ git clone https://github.com/thomasheller/crab themes/crab
+$ mkdir $HOME/src
+$ cd $HOME/src
+$ git clone https://github.com/gohugoio/hugo.git
+$ cd hugo
+$ go install
 ```
 
-Alternatively, if your site is in a git repository, you can use git
-submodules:
+Create a new site:
 
 ```sh
-$ git submodule add https://github.com/thomasheller/crab themes/crab
+$ hugo new site
+$ cd path/to/your/site
+```
+
+Clone the theme:
+
+```sh
+$ git clone https://github.com/OffsecDeer/Deer themes/deer
+```
+
+Or add it as a git submodule if your site is already a git repository:
+
+```sh
+$ git submodule add https://github.com/OffsecDeer/Deer themes/deer
+```
+
+Set the theme from your config.toml file:
+
+```
+theme = "deer"
+```
+
+Test it out:
+
+```
+$ hugo server
 ```
 
 To update the theme to the latest version, simply pull in the changes:
 
 ```sh
-$ git -C themes/crab pull
+$ git -C themes/deer pull
 ```
 
-## Usage
-
-The file `exampleSite/config.toml` provides an example for how the
-Crab theme can be configured, especially in regard to the menu items.
-
-Once you put a `config.toml` in your site's root directory, you can
-get a preview of your Hugo site as usual:
+To remove the theme follow these steps:
 
 ```sh
-$ hugo serve -t crab
+$ git submodule deinit -f -- themes/deer
+$ rm -rf .git/modules/themes/deer
+$ git rm -f a/submodule
+
 ```
 
 ## Menus
-
-See the `exampleSite/config.toml` file for how the menus can be
-configured:
 
 - Use the `weight` attribute to specify the order of menu items.
   Menu items with smaller numbers appear before those with bigger
@@ -79,7 +94,7 @@ file, the summary will appear in the right column:
 
 ```md
 {{% summary %}}
-This appears in the sidebar. *Markdown* is supported!
+This appears in the sidebar. *Markdown* is supported and so are images!
 {{% /summary %}}
 ```
 
@@ -94,7 +109,7 @@ as usual:
 ```
 +++
 title = "A Page With Tags"
-tags = [ "Hugo", "theme", "Crab" ]
+tags = [ "Hugo", "theme", "Deer" ]
 ...
 ```
 
@@ -115,12 +130,7 @@ declaration required to generate blog posts in the correct place.
 
 ## Logo
 
-To change the logo of the crab to your own customised image,
+To change the default logo to your own customised image,
 add `logoimage` to `config.toml`, where `logoimage` is the
 path inside your site's `static` directory.
 
-## Contact
-
-If you think anything could be improved about the Crab theme, feel
-free to [send a PR](https://github.com/thomasheller/crab) to the Crab
-repository.
