@@ -40,5 +40,6 @@
 	<h1>{{ .Title }}</h1>
 {{if (.Params.toc) }}
      <div id="toc" class="well col-md-4 col-sm-6" style="float: right;padding-top:-10px; margin-top:-10px;border-radius: 10px 0px 0px 10px;-moz-border-radius: 10px 0px 0px 10px;-webkit-border-radius: 10px 0px 0px 10px;border: 2px double #0040ff;">
-    </div>
+    {{ .TableOfContents }}
+		</div>
 {{end}}
