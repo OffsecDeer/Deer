@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 {{ if .Params.showdate }}
-<p class="timestamp" id="date-of-writing">{{ .Date.Format "January 2, 2006" }}</p>
+<p class="timestamp" id="DateOfWriting">{{ .Date.Format "January 2, 2006" }}</p>
 {{ end }}
 {{ .Content }}
 {{ if .Params.tags }}
