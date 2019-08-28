@@ -13,7 +13,7 @@ body {
   border-width: 3px;
   top-margin: 0px;
   bottom-margin: 30px;
-  float: left;
+  float: none;
 }
 
 #TableOfContents ul li {
