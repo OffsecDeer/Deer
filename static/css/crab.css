@@ -10,8 +10,12 @@ body {
 #TableOfContents {
   border: solid;
   border-color: #6FDAE1;
-  border-width: 4px;
+  border-width: 3px;
   top-margin: 0px;
+}
+
+#TableOfContents ul li {
+  margin-left: 20px; 
 }
 
 #container {
@@ -103,20 +107,14 @@ hr {
 }
 
 #content {
-  margin-top: 1em;
+  margin-top: 2em;
 }
 
 #article {
-  margin-top: 1em;
+  margin-top: 2em;
 }
 
-h1 {
-  font-family: 'Lora', serif;
-  font-weight: 400;
-  margin: 0px, 0px;
-}
-
-
+h1,
 h2,
 h3,
 h4,
