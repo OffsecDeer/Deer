@@ -14,7 +14,7 @@ body {
   top-margin: 0px;
   bottom-margin: 30px;
   float: none;
-  width: auto;
+  display: inline-block;
 }
 
 #TableOfContents ul li {
