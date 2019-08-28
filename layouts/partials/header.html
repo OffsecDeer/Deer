@@ -37,7 +37,14 @@
       <div id="content">
 
         <div id="article">
-	  <h1>{{ .Title }}</h1>
-		{{ if (.Params.toc) }}
-    {{.TableOfContents}}
-{{ end }}
+	  <!--<h1>{{ .Title }}</h1>-->
+{{if .Params.toc}}
+<aside id="toc">
+	<header class="toc-header">
+		<a href="#{{.Title | urlize}}">
+		<h3 class="{{.Title}}</h3>
+		</a>
+	</header>
+	{{.TableOfContents}}
+</aside>
+{{end}}
