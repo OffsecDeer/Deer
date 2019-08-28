@@ -12,6 +12,7 @@ All the original features from Crab are supported:
 - two-column
 - tag support
 - blog articles
+
 New features (more to be added in the future):
 - better looking table of contents
 - more compact
