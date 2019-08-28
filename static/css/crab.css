@@ -25,6 +25,11 @@ body {
   margin: auto;
 }
 
+#DateOfWriting {
+  bottom-margin: 30px;
+  top-margin: 20px;
+}
+
 #header {
   margin-top: 1em;
 }
