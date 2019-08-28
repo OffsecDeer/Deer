@@ -1,5 +1,5 @@
 {{ partial "header.html" . }}
-{{ if .Params.showthedate }}
+{{ if .Params.showdate }}
 <p class="timestamp">{{ .Date.Format "January 2, 2006" }}</p>
 {{ end }}
 {{ .Content }}
