@@ -12,6 +12,7 @@ body {
   border-color: #6FDAE1;
   border-width: 3px;
   top-margin: 0px;
+  float: left;
 }
 
 #TableOfContents ul li {
