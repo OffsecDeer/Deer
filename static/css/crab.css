@@ -8,7 +8,9 @@ body {
 }
 
 #TableOfContents {
-  border: double;
+  border: solid;
+  border-color: #6FDAE1;
+  border-width: 4px;
   top-margin: 0px;
 }
 
