@@ -37,14 +37,9 @@
       <div id="content">
 
         <div id="article">
-	  <!--<h1>{{ .Title }}</h1>-->
+	<h1>{{ .Title }}</h1>
 {{if (.Params.toc) }}
-<aside id="toc">
-	<header class="toc-header">
-		<a href="#{{.Title | urlize}}">
-		<h3 class="{{.Title}}</h3>
-		</a>
-	</header>
-	{{.TableOfContents}}
-</aside>
+     <div id="toc" class="well col-md-4 col-sm-6" style="float: right;padding: 0.01em 10px;border-radius: 10px 0px 0px 10px;-moz-border-radius: 10px 0px 0px 10px;-webkit-border-radius: 10px 0px 0px 10px;border: 2px dotted #0040ff;">
+     {{ .TableOfContents }}
+    </div>
 {{end}}
