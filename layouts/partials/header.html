@@ -38,7 +38,7 @@
 
         <div id="article">
 	  <!--<h1>{{ .Title }}</h1>-->
-{{if .Params.toc}}
+{{if (.Params.toc) }}
 <aside id="toc">
 	<header class="toc-header">
 		<a href="#{{.Title | urlize}}">
