@@ -3,7 +3,7 @@
       <div id="footer">
         Copyright {{ now.Year }} {{ $.Site.Params.copyright }}
       </div>
-{{ if isset .Site "DisqusShortname" }} 
+{{ if isset .Site "disqusShortname" }} 
         {{ partial "disqus.html" . }}
 {{ end }}
     </div>
