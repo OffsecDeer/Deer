@@ -15,9 +15,9 @@ All the original features from Crab are supported:
 
 New features (more to be added in the future):
 - better looking table of contents
-- more compact
 - code highlighting with [Prism.js](https://prismjs.com/)
-- do the dark relaxing colors count?
+- do the relaxing dark colors count?
+- description property in the front matter of posts for arbitrary content in list pages
 
 ## Installation
 
