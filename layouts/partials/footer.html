@@ -6,12 +6,14 @@
         Copyright {{ now.Year }} {{ $.Site.Params.copyright }}
       </div>
 
-<!-- do not render comments on content pages with the "page" parameter in front matter, such as About, Home, Contacts pages etc 
-{{ if and (isset .Site "DisqusShortname") (eq .Params.page "false") }} 
-        {{ template "_internal/disqus.html" . }}
-{{ end }}-->
+<!-- do not render comments on content pages with the "page" parameter in front matter, such as About, Home, Contacts pages etc -->
+{{ if and (isset .Site "DisqusShortname") (isset .Params "page") }} 
+        {{ partial "disqus.html" . }}
+{{ else }}
 
-{{ partial "disqus.html" . }}
+{{ end }}
+
+
 
     </div>
 <script src='/js/prism.js'></script>
