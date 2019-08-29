@@ -10,7 +10,7 @@
     <p class="timestamp">{{ .Date.Format "January 2, 2006" }}</p>
     <div class="content">
     {{ if isset .Params "description" }}
-        {{ index .Params "description }}
+        {{ index .Params "description" }}
     {{ else }}
         {{ .Summary | plainify | safeHTML }}
         {{ if .Truncated }}
