@@ -18,6 +18,7 @@ New features (more to be added in the future):
 - code highlighting with [Prism.js](https://prismjs.com/)
 - do the relaxing dark colors count?
 - description property in the front matter of posts for arbitrary content in list pages
+- includes built-in disqus partial layout
 
 ## Installation
 
