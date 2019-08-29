@@ -7,8 +7,10 @@
       </div>
 
 <!-- do not render comments on content pages with the "page" parameter in front matter, such as About, Home, Contacts pages etc -->
-{{ if ne (isset .Params "page") "true" }}
-        {{ template "_internal/disqus.html" . }}
+{{ if isset .Site "disqusShortname" }} 
+        {{ if ne (isset .Params "page") "true" }}
+                {{ template "_internal/disqus.html" . }}
+        {{ end }}
 {{ end }}
 
     </div>
