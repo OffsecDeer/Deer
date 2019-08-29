@@ -7,7 +7,7 @@
       </div>
 
 <!-- do not render comments on content pages with the "page" parameter in front matter, such as About, Home, Contacts pages etc -->
-{{ if isset "disqusShortname" }} 
+{{ if isset .Site "DisqusShortname" }} 
         {{ if isset .Params "page" }}
 
         {{ else }}
