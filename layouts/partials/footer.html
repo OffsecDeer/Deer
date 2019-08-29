@@ -8,9 +8,9 @@
 
 <!-- do not render comments on content pages with the "page" parameter in front matter, such as About, Home, Contacts pages etc -->
 {{ if and (isset .Site "DisqusShortname") (isset .Params "page") }} 
-        {{ partial "disqus.html" . }}
+        
 {{ else }}
-
+        {{ partial "disqus.html" . }}
 {{ end }}
 
 
