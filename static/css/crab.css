@@ -269,10 +269,23 @@ ul.pagination {
   }
 
   #summary {
-    display: block;
     position: absolute;
     top: 0px;
     left: 608px;
     width: 342px;
   }
+}
+
+@media screen and (max-width: 1020px) {
+  #container, #header, #content, #footer, #summary, #article, #site-logo, #site-slogan, #site-title, #TableOfContents {
+    float: none;
+    width: auto;
+  }
+  #summary {
+	position: static;
+	top: auto;
+	left: auto;
+    width: auto;
+  }
+  p{ font-size: 2em; }
 }
