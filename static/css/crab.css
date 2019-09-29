@@ -45,6 +45,7 @@ a:hover {
 #site-title {
   font-weight: 700;
   font-size: xx-large;
+  color: white;
 }
 
 #site-title a:link,
