@@ -284,7 +284,7 @@ ul.pagination {
 /* Line separators */
 
 #hr {
-	border-style: solid;
+	border-style: solid #aaa;
 }
 
 /* First raw of a table */
