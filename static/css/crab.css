@@ -76,10 +76,6 @@ nav ul {
 nav ul.first > li {
   display: block;
   /*margin: .5em 0;*/
-  border-bottom: solid;
-  border-left: solid;
-  border-right: solid;
-  border-width: 1px;
   font-weight: bold;
 }
 
