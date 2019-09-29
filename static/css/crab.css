@@ -48,7 +48,7 @@ a:hover {
   color: white;
 }
 
-#site-title.a {
+#site-title > a {
 	color: white;
 }
 
