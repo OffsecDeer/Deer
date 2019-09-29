@@ -68,10 +68,10 @@ a:hover {
   margin-top: .75em;
 }
 
-nav {
+/*nav {
   clear: both;
-  /*margin-top: 3em;*/
-}
+  margin-top: 3em;
+}*/
 
 nav ul {
   list-style-type: none;
