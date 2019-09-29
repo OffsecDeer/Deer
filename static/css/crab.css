@@ -289,7 +289,7 @@ ul.pagination {
 
 /* First raw of a table */
 
-#tr {
+#tr, th {
 	background-color: #66ccff;
 	border-style: solid;
 }
