@@ -76,9 +76,9 @@ nav ul {
 nav ul.first > li {
   display: block;
   /*margin: .5em 0;*/
-  border-bottom: 4px solid;
-  border-left: 4px solid;
-  border-right: 4px solid;
+  border-bottom: solid;
+  border-left: solid;
+  border-right: solid;
   font-weight: bold;
 }
 
@@ -111,7 +111,7 @@ nav .current {
 #content,
 #footer,
 hr {
-  border-top: 1px dashed #aaa;
+  border-top: 1px #aaa;
 }
 
 #content {
