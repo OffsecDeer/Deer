@@ -79,6 +79,7 @@ nav ul.first > li {
   border-bottom: solid;
   border-left: solid;
   border-right: solid;
+  border-width: 1px;
   font-weight: bold;
 }
 
@@ -284,7 +285,8 @@ ul.pagination {
 /* Line separators */
 
 #hr {
-	border-style: solid #aaa;
+	border-style: 1px solid #aaa;
+	border-width: 1px;
 }
 
 /* First raw of a table */
@@ -292,6 +294,7 @@ ul.pagination {
 #tr, th {
 	background-color: #66ccff;
 	border-style: solid;
+	border-width: 1px;
 }
 
 /* All other table rows */
@@ -304,6 +307,7 @@ ul.pagination {
 
 #th, td {
 	border-style: solid;
+	border-width: 1px;
 }
 
 /* Highlight rows of tables when hovering on them */
