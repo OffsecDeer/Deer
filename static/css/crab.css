@@ -281,7 +281,7 @@ ul.pagination {
 /* Line separators */
 
 #hr {
-	border-style: 1px solid #aaa;
+	border-style: solid;
 	border-width: 1px;
 }
 
