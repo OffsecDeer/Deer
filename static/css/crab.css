@@ -48,6 +48,10 @@ a:hover {
   color: white;
 }
 
+#site-title.a {
+	color: white;
+}
+
 #site-title a:link,
 #site-title a:active,
 #site-title a:visited,
